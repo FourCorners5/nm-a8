@@ -1,0 +1,56 @@
+body {
+    text-align:center;
+    font-family:'Poppins', sans-serif;
+    background-color:#999999;
+
+}
+.navbar {
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10px;
+    margin-bottom:10px;
+    background-color:#999999;
+}
+.navbar a {
+    text-decoration:none;
+    margin:30px;
+}
+a {
+    text-decoration:none;
+}
+#bio-pic {
+    margin-right:auto;
+    margin-left:0;
+
+}
+#bio-text {
+    text-align:none;
+    font-size:18px;
+    width:500px;
+    margin:auto;
+
+}
+.project-class {
+    text-align:none;
+    font-size:18px;
+    width:500px;
+    margin:auto;
+}
+.heading {
+    font-size:75px;
+}
+span {
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+}
+#portfolio-contents {
+    margin:auto;
+    background-color:#999999;
+}
+#portfolio-contents td {
+    width:350px;
+    
+}
