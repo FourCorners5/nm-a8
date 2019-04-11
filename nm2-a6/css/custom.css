@@ -1,0 +1,51 @@
+.bg-brand {
+    background-color:#d65022;
+}
+.card {
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+.custom-row {
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+#logo {
+    margin-bottom:10px;
+}
+.btn-custom {
+    background-color:#d65022;   
+}
+
+a {
+    text-decoration:none;
+    color:white;
+}
+a:hover {
+    text-decoration:none; 
+}
+.jumbotron {
+    text-align:center;
+}
+body {
+    background-image:url(../images/background2.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-color:#d65022;
+    height:100%;
+
+
+
+}
+td {
+    padding:8px;
+}
+table {
+    text-align:center;
+    margin:auto;
+}
+html{
+    height:100%;
+}
+
