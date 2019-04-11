@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+
+<head>
+    <link href="css/main.css" rel="stylesheet"/>
+    <title>nm2-a5</title>
+    <style>
+       
+    </style>
+
+</head>
+
+<body>
+    <div id="info">
+    <h1>New Media Asssignment 5</h1>
+    <h4>Sam Blodgett</h4>
+    <h3>Conditions</h3>
+    <ol>
+        <li>  25 points - Alert the user if any field is blank when they submit.</li>
+        <li>  25 points – Alert the user if a message field has more than 250 characters in it when they submit.</li>
+        <li>  25 points – Alert the user if they have entered an invalid email address.</li>
+        <li>  25 Points – Require the user to enter the answer to a simple arithmetic problem before they can submit.</li>
+    </ol>
+</div>
+    <form>
+        <input type="email" id="email" placeholder="exampleEmail@gmail.com" required="required" onchange="validator()" />
+        <input type="number" id="number" value="number" required="required" onchange="validNumber()" placeholder="2+2=?" />
+        <input type="button" id="button" value="Submit"  onclick="validator()"/>
+    </form>
+    <p id="messageNumber"></p>
+    <footer>The submit button will appear once a valid email address and the correct number are entered.</footer>
+    <script>
+        var email = document.getElementById("email").value;
+        var emailInput = document.getElementById("email");
+        var number = document.getElementById("number").value;
+        var button = document.getElementById("button");
+
+        var stringEmail = String(email = document.getElementById("email").value);
+        var intNumber = parseInt(number = document.getElementById("number").value); 
+        button.classList.add("hide");
+
+
+        function validNumber() {
+            var intNumber = parseInt(number = document.getElementById("number").value);
+            if (intNumber == 4) {
+
+                button.classList.remove("hide");
+               
+            }
+            else {
+                alert("The number does not match the answer!");
+                button.classList.add("hide");
+       
+
+                
+            }
+           
+        }
+        function validator() {
+            var stringEmail = String(email = document.getElementById("email").value);
+            if (stringEmail === "") {
+                alert("Please type in an email address.");
+                emailInput.focus();
+            }
+           
+            if (stringEmail.includes("@") != true  || stringEmail.includes(".") != true) { 
+                if (stringEmail.includes("@") != true) {
+                    alert("Not a valid email address! The email you entered has no '@' in it");
+                }
+                if (stringEmail.includes(".") != true ) {
+                    alert("Not a valid email address! The email you entered has no '.' in it");
+                }
+                emailInput.focus();
+                
+            }
+            if (stringEmail.substring(0, 1) == "@" || stringEmail.substring(0, 1) == ".") {
+                alert("Not a Valid email adress! Includes a '@' or a '.' in the first position.");
+                emailInput.focus();
+            }
+            if (stringEmail.length > 250) {
+                alert("The email Address you entered is too long!");
+                emailInput.focus();
+            }
+        }
+
+    </script>
+</body>
+
+</html>
