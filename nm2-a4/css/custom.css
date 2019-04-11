@@ -1,0 +1,32 @@
+.bg-brand {
+background-color:#5b5b55;
+color:#8781bd;
+}
+.bg-brand a {
+    color: hsl(0, 0%, 72%);
+}
+
+.bg-brand a:active {
+    color:#ffffff;
+}
+.bg-brand a:hover {
+    color:#8781bd;
+}
+.copy-footer {
+    text-align:center;
+    background-color:#5b5b55;
+    padding:10px;
+}
+body{
+    margin:0px;
+    
+}
+.container-fluid {
+    background-color:#7270b4;
+}
+.jumbotron {
+    opacity:0.8;
+}
+.card {
+    opacity:0.8;
+}
